@@ -10,7 +10,7 @@ class MethodChainer
 
   def reverse!
     @content = @content.reverse
-    # self -- notice the difference when commented out
+    self
     # What is returned?
   end
 

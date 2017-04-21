@@ -4,15 +4,19 @@
 class Person
   attr_reader :status
 
+  # defines Person class with a @status of nill
   def initialize
     @status = nil
   end
 
+  # allow you to define status
   def status=(new_status)
     @status = new_status
 
+    # will show the new value of status
     # Side Effect of changing a Person's status is to say it
-    %x(`say` "Status changed to #{status}")
+    %x(`say "Status changed to #{status}"`)
+    puts "Status changed to #{status}"
   end
 
   def log_in
